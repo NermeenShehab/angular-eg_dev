@@ -1,0 +1,29 @@
+
+
+
+
+.section3_1 .card{
+    border:none;
+}
+.cat-div{
+    margin-top: -3.5rem;
+    background-color: #E8F0F2;
+    width: 70%;
+    text-align: center;
+}
+.cat-div p{
+    color: #053742;
+    font-weight: bold;
+}
+.imgCard{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+img{
+    height: 100%;
+}
+/* End of Section3_1 */
+

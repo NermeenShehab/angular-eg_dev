@@ -1,0 +1,186 @@
+<div class="containersign">
+    <div class="board">
+
+        <!-- Navigation Area (Circular Tabs) -->
+        <app-signUp-navbar></app-signUp-navbar>
+
+        <!-- Nested view  -->
+
+        <div class="tab-content">
+            <form #personalForm="ngForm" class="editForm" novalidate>
+                <div class="tab-pane fade show active ">
+
+                    <h4 class="head text-center ">{{title}}</h4>
+                    <br/>
+                    <div class='row justify-content-around'>
+                        <div class='col-lg-offset-1 col-lg-10 col-sm-offset-2 col-sm-8'>
+                            <div class="row">
+                                <!-- <div class='col-lg-12 col-sm-6'>
+                                    <div class="form-control ">
+                                        <label class="control-label" for="firstname">First Name</label>
+                                        <input class="form-control input-md" #name="ngModel" required id="firstname" name="firstname" type="text" placeholder="First Name" [(ngModel)]="personal.firstName">
+                                        <div class="alert alert-danger" [hidden]="firstname.valid || firstname.pristine">First Name is required</div>
+                                    </div>
+                                </div> -->
+                                <div class='col-lg-5 col-sm-10 mb-2 '>
+                                    <div class="form-control  ">
+                                        <label class="control-label" for="firstname">First Name</label>
+                                        <input class="form-control input-md m-1" #fname="ngModel" required minlength="4" id="firstname" name="firstname" type="text" [(ngModel)]="personal.firstName">
+                                        <div *ngIf="fname.invalid && (fname.dirty || fname.touched)" class="alert alert-danger">
+
+                                            <div *ngIf="fname.errors?.required">
+                                                Name is required.
+                                            </div>
+                                            <div *ngIf="fname.errors?.minlength">
+                                                Name must be at least 4 characters long.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='col-lg-5 col-sm-10 mb-2 '>
+                                    <div class="form-control">
+                                        <label class="control-label" for="lastname">Last Name</label>
+
+                                        <input class="form-control input-md m-1" #lname="ngModel" required minlength="4" id="lastname" name="lastname" type="text" [(ngModel)]="personal.lastName">
+                                        <div *ngIf="lname.invalid && (lname.dirty || lname.touched)" class="alert alert-danger">
+
+                                            <div *ngIf="lname.errors?.required">
+                                                Name is required.
+                                            </div>
+                                            <div *ngIf="lname.errors?.minlength">
+                                                Name must be at least 4 characters long.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-lg-5 col-sm-10 mb-2 ">
+                                    <div class="form-control ">
+                                        <label class="control-label" for="inputmask">National id</label>
+                                        <div class="col-lg-12 col-sm-6 m-1 ">
+                                            <p-inputMask [(ngModel)]="val" onFocus [(ngModel)]="personal.Nationalid" mask="9 99 99 99 99 999 99"></p-inputMask>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-control">
+
+                                <label class="control-label" for="Nationalid">National id</label>
+                                <input class="form-control input-md" #Nationalid="ngModel" required pattern="^[0-9]*$" name="Nationalid" type="text" id="Nationalid" placeholder="Nationalid" [(ngModel)]="personal.Nationalid">
+                                <div class="alert alert-danger" [hidden]="Nationalid.valid || Nationalid.pristine">Nationalid is required </div>
+                            </div>-->
+
+                                <div class="col-lg-5 col-sm-10  mb-2 ">
+                                    <div class="form-control">
+                                        <label class="control-label" for="inputmask">Phone Number</label>
+                                        <div class="col-lg-12 col-sm-6 m-1 ">
+                                            <p-inputMask ngm="" [(ngModel)]="personal.Nationalid" mask="9999 999 9999" max-length="10" class="ng-pristine ng-untouched"></p-inputMask>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- <div class="form-control">
+                                <label class="control-label" for="phonenumber">phone number</label>
+                                <input class="form-control input-md" #phonenumber="ngModel" name="phonenumber " type="text " id="phonenumber " placeholder="phone number " [(ngModel)]="personal.phonenumber">
+                                <div class="alert alert-danger " [hidden]="phonenumber.valid || phonenumber.pristine ">phone number must be valid</div>
+                            </div> -->
+
+                                    <!-- <div class="p-field p-col-12 p-md-4">
+                              <span class="p-float-label">
+                            <p-inputMask inputId="inputmask" mask="99/99/9999" [(ngModel)]="value5"></p-inputMask>
+                            <label for="inputmask">InputMask</label>
+                        </span>
+                          </div>-->
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-5 col-sm-10  mb-2">
+                                    <div class="form-control ">
+                                        <label class="control-label" for="street">Street</label>
+                                        <input class="form-control input-md m-1" #street="ngModel" required id="street" name="street" type="text" [(ngModel)]="personal.street">
+                                        <!-- <div class="alert alert-danger" [hidden]="street.valid || street.pristine">Street personal is required</div> -->
+                                        <div *ngIf="street.invalid && (street.dirty || street.touched)" class="alert alert-danger">
+                                            <div *ngIf="street.errors?.required">
+                                                Street is required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-5 col-sm-10  mb-2">
+                                    <div class="form-control  ">
+                                        <label class="control-label" for="city">City</label>
+                                        <input class="form-control input-md m-1" #city="ngModel" required id="city" name="city" type="text" placeholder="City" [(ngModel)]="personal.city">
+                                        <!-- <div class="alert alert-danger" [hidden]="city.valid || city.pristine">City is required</div> -->
+
+                                        <div *ngIf="city.invalid && (city.dirty || city.touched) " class="alert alert-danger">
+                                            <div *ngIf="city.errors?.required">
+                                                City is required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='col-lg-offset-4 col-lg-10 col-sm-offset-5 col-sm-4 p-2'>Gender
+
+                                <div class="radio p-4">
+                                    <div class="form-check  ">
+                                        <input class="form-check-input" [(ngModel)]="personal.gender" type="radio" name="gridRadios" required id="gridRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">Male</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" [(ngModel)]="personal.gender" type="radio" name="gridRadios" required id="gridRadios2" value="option2">
+                                        <label class="form-check-label" for="gridRadios2">Female</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- <div class="form-control ">
+                                  <label class="control-label " for="username ">Username</label>
+                                  <input class="form-control input-md " #username="ngModel " required pattern="^[^\s@]{2,}$ " name="username " type="text " id="username " placeholder="Username " [(ngModel)]="personal.username ">
+                                  <div class="alert alert-danger " [hidden]="username.valid || username.pristine ">username is required and must be valid</div>
+                              </div>
+
+                              <div class="form-control ">
+                                  <label class="control-label " for="email ">Email</label>
+                                  <input class="form-control input-md " #email="ngModel " required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$ " id="email " name="email " type="text " placeholder="Email " [(ngModel)]="personal.email ">
+                                  <div class="alert alert-danger " [hidden]="email.valid || email.pristine ">Email is required and must be valid</div>
+                              </div>
+                              <div class="form-control ">
+                                  <label class="control-label " for="Password ">Password</label>
+                                  <input class="form-control input-md " #Password="ngModel " required pattern="^[^\s@]{2,}$ " id="Password " name="Password " type="text " placeholder="Password " [(ngModel)]="personal.password ">
+                                  <div class="alert alert-danger " [hidden]="Password.valid || Password.pristine ">Password</div>
+                              </div>
+                              <div class="form-control ">
+                                  <label class="control-label " for="Password ">Confirm Password</label>
+                                  <input class="form-control input-md " #Password="ngModel " required pattern="^[^\s@]{2,}$ " id="confirmPassword " name="confirmPassword " type="text " placeholder="confirm Password " [(ngModel)]="personal.confirmpassword ">
+                                  <div class="alert alert-danger " [hidden]="Password.valid || Password.pristine ">Password Must be Matched</div>
+                              </div> -->
+
+                            <div class="form-control text-center">
+                                <button class="btn btn-success btn-outline-rounded btn-info " [disabled]="!personalForm.valid " (click)="goToNext(personalForm) "> Next <span style="margin-left:10px; " class="glyphicon glyphicon-arrow-right "></span></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </form>
+        </div>
+
+    </div>
+
+
+</div>

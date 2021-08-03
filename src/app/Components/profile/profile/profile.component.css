@@ -1,0 +1,26 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+.profile{
+  background-color: #f2f1ef;
+  margin-top: 110px;
+  border-radius: 5px;
+  background-image: url(/assets/images/im14.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.btn{
+  color: #053742;
+  background-color: #39A2DB;
+  margin-left: 10px;
+  /* #88c417 */
+}
+
+.nav-link{
+  color:white;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+  color:#88c417;
+}

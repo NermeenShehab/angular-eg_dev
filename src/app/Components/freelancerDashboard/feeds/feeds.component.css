@@ -1,0 +1,17 @@
+
+/* feed */
+.profile-feed-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid lightgray;
+  }
+  .img-sm {
+      width: 43px;
+      height: 43px;
+      margin-right: 10px;
+  }
+  /* feed */
+  .bg{
+    /* border: 2px solid teal; */
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+}

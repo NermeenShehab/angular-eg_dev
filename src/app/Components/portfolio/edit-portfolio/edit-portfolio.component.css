@@ -1,0 +1,23 @@
+.cover {
+    /* background-image: url("https://www.capcitycreative.ca/wp-content/uploads/2018/08/design.jpg"); */
+    background-image: url("https://onlineplus.com.au/wp-content/uploads/2016/11/slider-background-1.jpg");
+    /* background-image: url("https://www.joomshaper.com/images/2020/02/04/portfolio-1.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: white 0px 0px 2px;
+    height: 300px;
+    align-items: center;
+  }
+  
+  .cover h1 {
+    color: white;
+    text-align: center;
+  }
+  label {
+    font-weight: bold;
+  }
+  .box {
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+  }
+  

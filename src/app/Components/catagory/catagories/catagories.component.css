@@ -1,0 +1,63 @@
+.cd:hover a{
+    border-bottom: 4px solid #88c417;
+}
+a{
+    color:black;
+}/*background-size:110% 110%;*/
+.cad{
+    height:180px;
+    color:white;
+    margin-top:78px; 
+    background-image: url("/assets/imges/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+     
+  
+} 
+ .cad a{
+    color: white;
+    text-decoration: none;
+}
+
+h2{
+    margin-top: 50px;
+}
+    
+ .cd {
+     text-align: center;
+     padding: 0px;
+     margin:10px;
+      
+    }
+.cd  img{
+    width:100%;
+    height:150px ;
+}
+.cd:hover{
+    transform: scaleY(1.05);
+}
+
+span{
+    
+    color: #88c417;
+}
+ 
+a {
+    color:black;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.colors{
+    color: #88c417;
+}
+.subcat{
+     margin: 50px;
+ }
+ .section {
+    padding: 100px 0;
+    margin: -45px;
+}

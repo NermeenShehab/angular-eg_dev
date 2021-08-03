@@ -1,0 +1,23 @@
+
+/*section 2 */
+
+.section2 .card{
+    border: none;
+}
+
+.section2 .card-title{
+    color :#053742
+}
+.section2 h1:hover{
+    animation: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+/* End section2 */
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    .section2 h1{
+        font-size: 20px;
+    }
+}

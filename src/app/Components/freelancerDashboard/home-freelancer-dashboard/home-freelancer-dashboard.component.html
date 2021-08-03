@@ -1,0 +1,64 @@
+<!-- nav bar-->
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="#">ITI Jobs</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-5" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Find Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Your Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Browse Projects</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-3"></div>
+        <div class=" col-3 collapse navbar-collapse">
+            <ul class="navbar-nav justify-content-middle">
+                <li class="nav-link active ">
+                    <img class="nav-icon" src="assets/notification.png">
+                </li>
+                <li class="nav-link active">
+                    <img class="nav-icon" src="assets/mail-inbox-app.png">
+                </li>
+                <li class="nav-link active">
+                    <a>Jown Do</a>
+                </li>
+                <li class="nav-link active">
+                    <img class="nav-profile-img" src="assets/std1.jpg">
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!--end of nav bar-->
+
+<!-- Start of Body -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-4 left p-4">
+            <!-- Left Section -->
+            <app-left-section ></app-left-section>
+        </div>
+        <!-- Start Of Gap Section -->
+            <div class="col-1">
+                <!--Gap-->
+            </div>
+            <!-- End Of Gap Section -->
+            <!-- Right Section -->
+            <div class="col-7 p-4">
+                <app-progress></app-progress>
+                <app-active-jobs></app-active-jobs>
+                <app-feeds></app-feeds>
+        </div>
+    </div>
+</div>

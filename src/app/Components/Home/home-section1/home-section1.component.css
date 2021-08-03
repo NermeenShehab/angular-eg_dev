@@ -1,0 +1,68 @@
+
+/* Section1 */
+
+.section1{
+    
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/header2.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+
+}
+.section1 .dreamDiv{
+    margin-top: 11rem;
+}
+.section1 h1{
+    font-size: 3.5rem;
+    color: white;
+}
+.section1 .form{
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #E8F0F2;
+}
+
+.section1 .btn1{
+    background-color: #053742;
+    color: #E8F0F2;
+    border-radius: 5px 5px 0px 0px !important;
+}
+.section1 .search{
+    background-color: #053742;
+    color: #bfcacc;
+}
+.section1 .search:hover{
+    background-color: #88c417;
+    color: #053742;
+}
+
+.btnClikcedStyle{
+    background-color: #E8F0F2 !important;
+    color: #053742 !important;
+
+}
+/* End of Section1 */
+
+/* Media Query */
+@media only screen and (max-width: 992px) {
+    .section1 h1{
+        font-size: 2rem;
+    }  
+    .section1 .dreamDiv{
+        margin-top: 5rem;
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+    .section1 h1{
+        font-size: 1rem;
+    }  
+    .section1 .dreamDiv{
+        margin-top: 1rem;
+    } 
+    .section1 button{
+        font-size: 15px;
+    }
+}

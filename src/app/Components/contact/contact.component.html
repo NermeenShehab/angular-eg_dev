@@ -1,0 +1,43 @@
+<div class="container  col-md-6">
+    <div class="row header">
+
+    <div id="my"><h1 >CONTACT US &nbsp;</h1></div> 
+      <h3>please get in touch and our expert support team will answer all your question &hearts;</h3>
+    </div>
+    <div class="row body">
+      <form #contact="ngForm" (ngSubmit)="save()" >
+        
+          <ul>
+          <li >
+              <label for="name" id="l">Name</label>
+              <input #n1="ngModel" class="form-control" type="text" [(ngModel)]="name" required  id="name"  name="name" />
+              <span class="myspan" *ngIf="n1.errors?.required && n1.touched">Please Enter Your Name</span>
+          </li>
+
+          <li>
+             <label for="email" id="l">email <span class="req"></span></label>
+             <input  #n2="ngModel" class="form-control" type="email" [(ngModel)]="email" required  id="email" name="email"/>
+             <span class="myspan" *ngIf="n2.errors?.required && n2.touched">Please Enter Your Email</span>
+
+          </li>    
+        
+          <li>
+            <label for="message" id="l">Message</label>
+            <textarea id="t" cols="46" rows="3"  class="form-control" [(ngModel)]="message" required  name="message" required></textarea>
+          </li>
+          
+          <li>
+            <input class="btn btn-submit" type="submit" value="Send"  (click)="save()" [disabled]="contact.invalid" />
+
+          </li>
+
+          <li>
+          <div *ngIf="mes">thanks &hearts;</div>
+          </li>
+          
+          </ul>
+   
+      </form>  
+    </div>
+
+  </div>

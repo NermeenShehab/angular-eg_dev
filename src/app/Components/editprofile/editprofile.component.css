@@ -1,0 +1,11 @@
+
+.profile{
+  margin-top: 120px;
+}
+.card,ul li{
+  background-color: #f2f1ef;
+  border-radius: 5px;
+}
+.btn{
+  background-color: #0a53be;
+}

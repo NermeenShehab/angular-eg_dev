@@ -1,0 +1,43 @@
+
+/* Section4 */
+
+.section4 .card{
+    /* border:none; */
+    text-align: center;
+}
+.section4 .card-text{
+    color: #053742;
+    font-weight: bolder;
+}
+.section4 .card-text:hover{
+    color:#88c417 ;
+    text-decoration: underline;
+}
+.section4 button{
+    border-radius: 10px;
+}
+.section4 small{
+    font-weight: bold;
+}
+/* ------------------------- */
+
+.section4 .card-body{
+    display: none;
+}
+.styleImg{
+    width: 70px;
+    height:70px;
+}
+.card-bodyStyle{
+    display: block !important;
+}
+a{
+    text-decoration: none;
+}
+/* End of Section4 */
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    .section4 h1{
+        font-size: 20px;
+    }
+}

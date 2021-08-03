@@ -1,0 +1,42 @@
+<div class="row profile bg p-2">
+    <div class="col-5">
+      <img class="profile-img" src="assets/std1.jpg">
+    </div>
+    <div class="col-7">
+      Welcome.. Jown Do
+    </div>
+    <hr class="mt-3 mb-1">
+    <a class="btn btn-primary btn-sm " routerLink="/editProfile" role="button"> Edit Your Profile</a>
+  </div>
+
+  <div class="row bg mt-4 p-2">
+    <div class="col rate ">
+      <h3>Your Rate</h3>
+      <p-rating [(ngModel)]="val" [readonly] = "readonly" [cancel] = "cancel" ></p-rating>
+    </div>
+  </div>
+
+  <div class="row bg mt-4 p-2">
+    <div class="col total-projects ">
+      <h3>Total Projects</h3>
+      <h1>40</h1>
+    </div>
+  </div>
+
+  <div class="row bg mt-4 p-2">
+    <div class="col Gallery ">
+      <h3>Portfolio</h3>
+      <h1>6</h1>
+      <hr class="mt-3 mb-1">
+    </div>
+    <a class="btn btn-primary btn-sm " routerLink="/addportfolio" role="button"> Add</a>
+
+  </div>
+  <div class="row bg mt-4 p-2">
+    <div class="col Messages ">
+      <h3>New Messages</h3>
+      <h1>0</h1>
+      <hr class="mt-3 mb-1">
+    </div>
+    <a class="btn btn-primary btn-sm " href="#" role="button"> Inbox</a>
+  </div>

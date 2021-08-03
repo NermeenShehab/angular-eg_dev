@@ -1,0 +1,161 @@
+<div class="containersign">
+    <div class="board">
+        <!-- Navigation Area (Circular Tabs) -->
+        <app-signUp-navbar></app-signUp-navbar>
+
+        <!-- Nested view  -->
+
+        <div class="tab-content">
+            <form #workForm="ngForm" class="editForm" novalidate>
+                <div class="tab-pane fade show active">
+                    <h4 class="head text-center">{{title}}</h4>
+                    <br/>
+                    <div class="row justify-content-around">
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10">
+
+                            <div class="row ">
+                                <!-- <div class="form-group">
+                                <label class="control-label" for="university">university</label>
+                                <input class="form-control input-md" #university="ngModel" required id="university" name="university" type="text" placeholder="university" [(ngModel)]="work.university">
+                                <div class="alert alert-danger" [hidden]="university.valid || university.pristine">university is required</div>
+                            </div> -->
+                                <!-- <div class="col-xs-12 col-sm-5">
+                                    <div class="form-group">
+                                        <label class="control-label" for="degree">Degree</label>
+                                        <input class="form-control input-md" #degree="ngModel" required id="degree" name="degree" type="text" placeholder="degree" [(ngModel)]="work.degree">
+                                        <div class="alert alert-danger" [hidden]="degree.valid || degree.pristine">Degree is required</div>
+                                    </div>
+                                </div> -->
+                                <div class="col-lg-5 col-sm-10 mb-2 ">
+                                    <div class="form-control ">
+                                        <label class="control-label" for="university">university</label>
+                                        <input class="form-control input-md m-1" #university="ngModel" required id="university" name="university" type="text" [(ngModel)]="work.university">
+                                        <div *ngIf="university.invalid && (university.dirty || university.touched)" class="alert alert-danger">
+                                            <div *ngIf="university.errors?.required">
+                                                University is required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-10 mb-2 ">
+                                    <div class="form-control ">
+                                        <label class="control-label" for="specilization">Specilization</label>
+                                        <input class="form-control input-md m-1" #specilization="ngModel" required id="specilization" name="specilization" type="text" [(ngModel)]="work.specilization">
+                                        <div *ngIf="specilization.invalid && (specilization.dirty || specilization.touched)" class="alert alert-danger">
+                                            <div *ngIf="specilization.errors?.required">
+                                                specilization is required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-lg-5  col-sm-10 ">
+                                    <div class="form-group">
+                                        <label class="control-label" for="specilization">Specilization</label>
+                                        <input class="form-control input-md" #specilization="ngModel" required id="specilization" name="specilization" type="text" placeholder="specilization" [(ngModel)]="work.specilization">
+                                        <div class="alert alert-danger" [hidden]="specilization.valid || specilization.pristine">Specilization is required</div>
+                                    </div>
+                                </div> -->
+
+                            </div>
+
+
+                            <div class="row">
+                                <!-- <div class="form-group">
+                                <label class="control-label" for="job">Job</label>
+                                <input class="form-control input-md" #job="ngModel" required id="job" name="job" type="text" placeholder="job title" [(ngModel)]="work.jobtitle">
+                                <div class="alert alert-danger" [hidden]="job.valid || job.pristine">Job is required</div>
+                            </div> -->
+
+
+                                <div class="col-lg-5 col-sm-10 mb-2">
+                                    <div class="form-control ">
+                                        <label class="control-label" for="job">Job</label>
+                                        <input class="form-control input-md m-1" #job="ngModel" required id="job" name="job" type="text" [(ngModel)]="work.jobtitle">
+                                        <div *ngIf="job.invalid && (job.dirty || job.touched)" class="alert alert-danger">
+                                            <div *ngIf="job.errors?.required">
+                                                Job is required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-xs-12 col-sm-5">
+                                <div class="form-group">
+                                    <label class="control-label" for="degree">Experience</label>
+                                    <input class="form-control input-md" #experience="ngModel" required id="experience" name="experience" type="text" placeholder="Experience" [(ngModel)]="work.experience">
+                                    <div class="alert alert-danger" [hidden]="experience.valid || experience.pristine">Experience is required</div>
+                                </div>
+                            </div> -->
+                                <div class="col-lg-10 col-sm-10 mb-2 ">
+                                    <div class="form-control ">
+                                        <label class="control-label" for="degree">Experience</label>
+                                        <textarea class="form-control input-md m-1" #experience="ngModel" required id="experience" name="experience" type="text" [(ngModel)]="work.experience"></textarea>
+                                        <div *ngIf="experience.invalid && (experience.dirty || experience.touched)" class="alert alert-danger">
+                                            <div *ngIf="experience.errors?.required">
+                                                Experience is required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row justify-content-around">
+                                <div class='col-lg-offset-4 col-lg-10 col-sm-offset-5 col-sm-4 p-2'>Register AS
+
+                                    <div class="radio p-4">
+                                        <div class="form-check  ">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" (click)="setradio('Worker')" required checked ngModel>
+                                            <label class="form-check-label" for="gridRadios1">Developer</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" (click)="setradio('Freelancer')" required ngModel>
+                                            <label class="form-check-label" for="gridRadios2">Client</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row" *ngIf="isSelected('Worker')">
+
+
+                                    <div class="col-lg-10 col-sm-10 mb-2">
+                                        <div class="form-group">
+                                            <label class="control-label" for="skills">Skills</label>
+                                            <p-chips [(ngModel)]="values" class="form-control input-md" #skills="ngModel" required id="skills" name="skills" type="text" [(ngModel)]="work.skills"></p-chips>
+                                            <div *ngIf="skills.invalid && (skills.dirty || skills.touched)" class="alert alert-danger">
+                                                <div *ngIf="skills.errors?.required">
+                                                    Skills is required.
+                                                </div>
+                                            </div>
+                                            <!-- <input class="form-control input-md" #skills="ngModel" required id="skills" name="skills" type="text" placeholder="Skills" [(ngModel)]="work.skills"> -->
+                                            <!-- <div class="alert alert-danger" [hidden]="skills.valid || skills.pristine">Skills is required</div> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-10 col-sm-10 mb-2">
+                                        <div class="form-group">
+                                            <label class="control-label" for="overview">Overview</label>
+                                            <textarea class="form-control input-md" #overview="ngModel" required id="overview" name="overview" type="text" [(ngModel)]="work.overview"></textarea>
+                                            <!-- <div class="alert alert-danger" [hidden]="overview.valid || overview.pristine">overview is required</div> -->
+                                            <div *ngIf="overview.invalid && (overview.dirty || overview.touched)" class="alert alert-danger">
+                                                <div *ngIf="overview.errors?.required">
+                                                    Overview is required.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group text-center">
+
+                                    <button class="btn btn-outline-rounded btn-info" [disabled]="!workForm.valid" (click)="goToNext(workForm)"> Next <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

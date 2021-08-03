@@ -1,0 +1,85 @@
+
+
+
+    <!-- Section3 -->
+    <div class="container mb-5 mt-5">
+        <div class="row section3_1">
+            <div class="col-md-5">
+                <h2>Our Categories</h2>
+            </div>
+            <div class="col-12 mt-md-3">
+                <div class="row justify-content-around">
+
+                    <owl-carousel-o [options]="customOptions"> 
+                        <ng-template carouselSlide>
+                            <div class="col-md-4 justify-content-center">
+                                <a routerLink="/Catagories/:name">
+                                    <div class="card " style="width: 18rem; height: 14rem;">
+                                        <div class="imgCard">
+                                            <img src="/assets/images/Front.jpg" class="card-img-top img-fluid" alt="Responsive image">
+                                        </div>
+                                        <div class="card-body ps-0">
+                                            <div class="cat-div p-1">
+                                                <p class="Pro-Category m-1">Front-End </p>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </ng-template>  
+                        <ng-template carouselSlide>
+                            <div class="col-md-4 justify-content-center">
+                                <a routerLink="/Catagories/:name">
+                                    <div class="card " style="width: 18rem; height: 14rem;">
+                                        <div class="imgCard">
+                                            <img src="/assets/images/back.png" class="card-img-top img-fluid" alt="Responsive image">
+                                        </div>
+                                        <div class="card-body ps-0">
+                                            <div class="cat-div p-1">
+                                                <p class="Pro-Category m-1">Back-End</p>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </ng-template> 
+                        <ng-template carouselSlide>
+                            <div class="col-md-4 justify-content-center">
+                                <div class="card " style="width: 18rem; height:14rem">
+                                    <div class="imgCard">
+                                        <img src="/assets/images/android.png" class="card-img-top img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="card-body ps-0">
+                                        <div class="cat-div p-1">
+                                            <p class="Pro-Category m-1">Android</p>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>  
+                        <ng-template carouselSlide>
+                            <div class="col-md-4 justify-content-center">
+                                <div class="card " style="width: 18rem; height:14rem">
+                                    <div class="imgCard">
+                                        <img src="/assets/images/ios.png" class="card-img-top img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="card-body ps-0">
+                                        <div class="cat-div p-1">
+                                            <p class="Pro-Category m-1">IOS</p>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End of Section3 -->

@@ -1,0 +1,27 @@
+.nav-profile-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.nav-icon{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.profile{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profile-img{
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+}
+.total-projects,.rate ,.Messages ,.Gallery{
+    text-align: center;
+}
+.bg{
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+}
+

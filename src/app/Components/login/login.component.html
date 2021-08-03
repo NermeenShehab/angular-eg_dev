@@ -1,0 +1,180 @@
+<div class="containersign">
+    <button class="btn btn-primary mx-auto mt-5 d-block  p-2" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Login</button>
+
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="container-login100">
+                        <div class="wrap-login100">
+                            <form class="login100-form validate-form">
+                                <span class="login100-form-title p-b-43">
+                                        Login to continue
+                                    </span>
+
+
+                                <div class="wrap-input100 validate-input" data-validate="Valid email is required:
+                                        ex@abc.xyz">
+                                    <input class="input100" type="text" name="email">
+                                    <span class="focus-input100"></span>
+                                    <span class="label-input100">Email</span>
+                                </div>
+
+
+                                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                                    <input class="input100" type="password" name="pass">
+                                    <span class="focus-input100"></span>
+                                    <span class="label-input100">Password</span>
+                                </div>
+
+                                <div class="flex-sb-m w-full p-t-3 p-b-32">
+                                    <div class="contact100-form-checkbox">
+                                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                                        <label class="label-checkbox100" for="ckb1">
+                                                Remember me
+                                            </label>
+                                    </div>
+
+                                    <div>
+                                        <a class="txt1 btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                                Forgot Password?
+                                            </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="container-login100-form-btn">
+                                    <button class="login100-form-btn">
+                                            Login
+                                        </button>
+                                </div>
+
+
+                            </form>
+
+                            <div class="login100-more" style="background-image:
+                                    url('../../../assets/myimg/login/bg-01.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- model2 -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="container-login100">
+                        <div class="wrap-login100">
+                            <form class="login100-form validate-form">
+                                <span class="login100-form-title
+                                        p-b-43">
+                                        Forget Password
+                                    </span>
+
+
+                                <div class="wrap-input100
+                                        validate-input" data-validate="Valid
+                                        email is required: ex@abc.xyz">
+                                    <input class="input100" type="text" name="email">
+                                    <span class="focus-input100"></span>
+                                    <span class="label-input100">Email</span>
+                                </div>
+
+
+
+
+                                <div class="container-login100-form-btn">
+                                    <button class="login100-form-btn" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">
+
+
+                                        Forget Password
+                                        </button>
+                                </div>
+
+
+                            </form>
+
+                            <div class="login100-more" style="background-image:
+                                    url('../../../assets/myimg/login/bg-01.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- modal3 -->
+
+
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="container-login100">
+                        <div class="wrap-login100">
+                            <form class="login100-form validate-form  validate2-form">
+                                <span class="login100-form-title
+                                        p-b-43">
+                                        Reset Password
+                                    </span>
+
+
+                                <div class="wrap-input100 validate-input validate2-input" data-validate="Password is required" data-validate2="Password doesn't match">
+                                    <input class="input100" type="password" name="pass">
+                                    <span class="focus-input100"></span>
+                                    <span class="label-input100" id="pswd1">Password</span>
+                                </div>
+
+
+                                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                                    <input class="input100" type="password" name="pass">
+                                    <span class="focus-input100"></span>
+                                    <span class="label-input100" id="pswd2">Confirm Password</span>
+                                </div>
+
+                                <div class="container-login100-form-btn">
+                                    <button class="login100-form-btn" onclick="matchPassword()">
+                                                        Reset Password
+                                                    </button>
+                                </div>
+
+
+                            </form>
+
+                            <div class="login100-more" style="background-image:
+                                    url('../../../assets/myimg/login/bg-01.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+
+        <script src="../../../assets/vendor/bootstrap/js/popper.js"></script>
+        <script src="../../../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+        <script src="../../../assets/js/login/main.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+
+    </div>
+</div>

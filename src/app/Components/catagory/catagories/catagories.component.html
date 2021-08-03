@@ -1,0 +1,35 @@
+<div class="cad " > 
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-12 text-center">
+        <div class="breadcrumb__text">
+        <h2>Main Services</h2>
+        <div class="breadcrumb__links">
+        <a routerLink="/home">Home &gt;</a>
+        <a routerLink="/Catagories">Features &gt;</a>
+        <a  href="#">Services</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <section class="section ">
+
+        </section>
+<!--cattagories-->
+<div class="container"> 
+<div class="catagories  justify-content-center row  ">
+        <div *ngFor="let item of catagories " class="card cd col-xs-12 col-sm-4 col-md-3 col-lg-3 " >
+                <img src={{item.catimg}} class="card-img-top" alt="..." >
+                <div class="card-body">
+                <h5 class="card-title"><span>{{item.catid}}.</span>{{item.catname}}</h5>
+                <a routerLink="/Catagories/{{item.catname}}">Find Out More</a>
+                </div>
+        </div>
+ </div>
+</div>    
+ 
+   
+
+ 

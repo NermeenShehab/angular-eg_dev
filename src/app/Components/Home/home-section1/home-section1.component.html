@@ -1,0 +1,38 @@
+
+    <!-- Section1 Header -->
+    <div class="container-fluid section1 mt-sm-5 mb-5">
+    
+        <div class="row p-md-5 p-sm-4">
+            <div class="col-6 mb-md-5 dreamDiv">
+                <h1 ><b>Your Dream</b><br />Job is Waiting</h1>
+            </div>
+            <div class="col-12">
+                <button #btn1 (click)="btnStyle(btn1 , btn2)" class="btnClikcedStyle btn1 btn btn-lg btn1">Find a Developer</button>
+                <button #btn2 (click)="btnStyle(btn2 , btn1)" class="btn1 btn btn-lg btn2">Find a Project</button>
+                <div class="form">
+                    <div class="row d-flex align-items-around">
+                        <div class="col-12 mt-2">
+                            <form class="row g-md-3 d-flex justify-content-end">
+                                <div class="col-md-3 mt-3">
+                                    <input type="text" class="form-control" id="location" placeholder="Location">
+                                </div>
+                                <div class="col-md-3 mt-3">
+                                    <select class="form-select" aria-label="Category">
+                                        <option selected>Category</option>
+                                        <option value="1">Doctors</option>
+                                        <option value="2">Engineers</option>
+                                        <option value="3">Developers</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 justify-content-end d-flex"></div>
+                                <div class="col-1  flex-fill">
+                                    <button type="submit" class="btn mb-3 search mt-1">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Section1 Header -->

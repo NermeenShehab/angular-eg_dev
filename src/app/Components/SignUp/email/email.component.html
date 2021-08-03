@@ -1,0 +1,90 @@
+<div class="containersign">
+    <div class="board">
+        <!-- Navigation Area (Circular Tabs) -->
+        <app-signUp-navbar></app-signUp-navbar>
+
+        <!-- Nested view  -->
+
+        <div class="tab-content">
+            <form #emailForm="ngForm" class="editForm" novalidate>
+                <div class="tab-pane fade show active">
+                    <h4 class="head text-center">{{title}}</h4>
+                    <br/>
+                    <div class="row justify-content-around">
+                        <div class="col-lg-offset-1 col-lg-10 col-sm-offset-2 col-sm-8">
+
+                            <!-- <div class="form-control">
+                                <label class="control-label" for="username">Username</label>
+                                <input class="form-control input-md" #username="ngModel" required pattern="^[^\s@]{2,}$" name="username" type="text" id="username" placeholder="Username" [(ngModel)]="email.username">
+                                <div class="alert alert-danger" [hidden]="username.valid || username.pristine">username is required and must be valid</div>
+                            </div> -->
+                            <div class="row">
+                                <div class="col-lg-10 col-sm-10 mb-2">
+                                    <div class="form-control   ">
+                                        <label class="control-label" for="username">Username</label>
+                                        <input class="form-control input-md m-1" #username="ngModel" required pattern="^[^\s@]{2,}$" name="username" type="text" id="username" [(ngModel)]="email.username">
+                                        <div *ngIf="username.invalid && (username.dirty || username.touched)" class="alert alert-danger">
+
+                                            <div *ngIf="username.errors?.required">
+                                                username is required.
+                                            </div>
+                                            <div *ngIf="username.errors?.pattern">
+                                                username must be valid
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 mb-2">
+                                    <div class="form-control">
+                                        <label class="control-label" for="email">Email</label>
+                                        <input class="form-control input-md m-1" #Email="ngModel" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" id="Email" name="email" type="text" [(ngModel)]="email.email">
+                                        <div *ngIf="Email.invalid && (Email.dirty || Email.touched)" class="alert alert-danger">
+                                            <div *ngIf="Email.errors?.required">
+                                                Email is required.
+                                            </div>
+                                            <div *ngIf="Email.errors?.pattern">
+                                                Email must be valid
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="alert alert-danger" [hidden]="Email.valid || Email.pristine">Email is required and must be valid</div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10 col-sm-10 mb-2">
+                                    <div class="form-control">
+                                        <label class="control-label" for="Password">Password</label>
+                                        <div class="col-lg-8 col-sm-10 m-1 ">
+                                            <p-password [(ngModel)]="email.password" #Password="ngModel"></p-password>
+                                        </div>
+                                        <!-- <input type="password" Password class="form-control input-md m-1" #Password="ngModel" required id="Password" pattern="^[^\s@]{2,}$" name="Password" type="text" placeholder="Password" [(ngModel)]="email.password"> -->
+
+                                        <!-- <div class="alert alert-danger" [hidden]="Password.valid || Password.pristine">Password</div> -->
+                                    </div>
+                                </div>
+                                <!-- <div class="col-lg-10 col-sm-10  mb-2">
+                                    <div class="form-control">
+                                        <label class="control-label" for="Password">Confirm Password</label>
+                                        <input class="form-control input-md m-1" #Password="ngModel" required pattern="^[^\s@]{2,}$" id="confirmPassword" name="confirmPassword" type="text" [(ngModel)]="email.password">
+                                        <div class="alert alert-danger" [hidden]="Password.valid || Password.pristine">Password Must be Matched</div>
+                                    </div>
+                                </div> -->
+
+                            </div>
+
+
+                            <div class="form-control text-center">
+                                <button class="btn btn-success btn-outline-rounded btn-info" [disabled]="!emailForm.valid" (click)="goToNext(emailForm)"> Next <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,71 @@
+<div class="containersign">
+    <div class="board">
+        <!-- Navigation Area (Circular Tabs) -->
+        <app-signUp-navbar></app-signUp-navbar>
+
+        <!-- Nested view  -->
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active">
+                <h3 class="head text-center">{{title}}</h3>
+
+                <p class="narrow text-center">
+                    Here is a copy of the information you have entered:
+                </p>
+                <div class='row'>
+                    <div class='col-lg-offset-1 col-lg-10 col-sm-offset-3 col-sm-8
+              col-md-offset-4 col-md-8'>
+                        <div class="row">
+                            <div class='col-lg-3 col-sm-2'>
+                                <div class="form-group">
+                                    <label class="control-label" for="name">Name: </label>
+                                </div>
+                            </div>
+                            <div class='col-lg-9 col-sm-10'>
+                                {{formData.firstName + ' ' + formData.lastName}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-lg-3 col-sm-2'>
+                                <div class="form-group">
+                                    <label class="control-label" for="email">Email: </label>
+                                </div>
+                            </div>
+                            <div class='col-lg-9 col-sm-10'>
+                                {{formData.email}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-lg-3 col-sm-2'>
+                                <div class="form-group">
+                                    <label class="control-label" for="work">Work: </label>
+                                </div>
+                            </div>
+                            <div class='col-lg-9 col-sm-10'>
+                                {{formData.jobtitle}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-lg-3 col-sm-2'>
+                                <div class="form-group">
+                                    <label class="control-label" for="address">Address:
+                    </label>
+                                </div>
+                            </div>
+                            <div class='col-lg-9 col-sm-10'>
+                                {{formData.street}}
+                                <br/> {{formData.city }}
+                            </div>
+                        </div>
+
+
+                        <div class="text-center">
+                            <button class="btn btn-success btn-outline-rounded" (click)="submit()"> Submit <span
+                  style="margin-left:10px;" class="glyphicon
+                  glyphicon-arrow-right"></span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>

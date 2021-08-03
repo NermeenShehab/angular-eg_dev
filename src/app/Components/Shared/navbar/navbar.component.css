@@ -1,0 +1,16 @@
+/* Navbar */
+.navbar img{
+    width: 3.5rem;
+    height: auto;
+}
+.navbar{
+    background-color: #053742;
+}
+.navbar a{
+    color: #E8F0F2;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color:#88c417
+}
+/* End of navbar */

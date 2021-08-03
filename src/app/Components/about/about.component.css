@@ -1,0 +1,106 @@
+
+
+
+ .container h1{
+    font-size:50px;
+   
+ }
+ .about{
+    padding:5% ;
+    height:auto;
+    background-color:#fff;
+}
+
+
+ .about .left{
+    display:inline-block;
+
+ }
+ h3{
+    visibility: hidden;
+ }
+  h1{
+    text-align:center;
+    color:#053742 ;
+ }
+ 
+ .about .left p{
+    font-size:1rem;
+    margin:1rem ;
+
+ }
+ 
+ .right{
+   padding:2% ;
+   float: right;
+    width:50%;
+    vertical-align: middle;
+ }
+  .left{
+    width:50%;
+    display:inline-block;
+ }
+ 
+ .about .right{
+    width:50%;
+    display:inline-block;
+
+   
+ }
+  .right img{
+    width:100%;
+    text-align: center;
+
+    
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 800px) {
+   .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+   }
+   .about{
+      display: block;
+      text-align: center;
+      width:100%;
+     
+      
+}
+
+img{
+   top:50%;
+   left: 50%;
+}
+h3{
+   visibility:visible;
+}
+h1{
+   visibility: hidden;
+}
+.right, .left{
+   float: none;
+   width: 100%;
+}
+.about .right{
+   
+   display:block;
+   width: 70%;
+   justify-content: center;
+   width :100%;
+}
+.about .left  p{
+   width: 100%;
+   margin:3px;
+text-align: center;
+font-family: cursive;
+}
+.left{
+   width: 100%;
+
+}
+
+}

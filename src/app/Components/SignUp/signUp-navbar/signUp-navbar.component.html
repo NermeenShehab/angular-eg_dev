@@ -1,0 +1,50 @@
+<div class="board-inner ms-5" id="status-buttons">
+    <ul class="nav nav-item" id="myitem">
+        <!-- <div class="liner"></div> -->
+
+
+        <!-- circular user icon -->
+        <li>
+            <a routerLink="/SignUp/personal" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" data-toggle="item" title="personal">
+                <span class="round-item one">
+
+                <img src="../../../../../../assets/myimg/signup/profile.png">
+
+            </span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/SignUp/email" routerLinkActive="active" data-toggle="item" title="email">
+                <span class="round-item two">
+            <img src="../../../../assets/myimg/signup/signup.png">
+        </span>
+            </a>
+        </li>
+
+        <!-- circular tasks icon -->
+        <li>
+            <a routerLink="/SignUp/work" routerLinkActive="active" data-toggle="item" title="work">
+                <span class="round-item two">
+                <!-- <i class="glyphicon glyphicon-tasks"></i> -->
+                <img src="../../../../assets/myimg/signup/job.png">
+            </span>
+            </a>
+        </li>
+
+
+
+        <!-- circular ok icon -->
+        <li>
+            <a routerLink="/SignUp/result" routerLinkActive="active" data-toggle="item" title="completed">
+                <span class="round-item four">
+              <img src="../../../../assets/myimg/signup/confirm.png">
+            </span>
+            </a>
+        </li>
+
+    </ul>
+    <div class="clearfix"></div>
+</div>
+
+<!-- Close the Splash screen -->
+<script src="../../../../assets/js/loading-bars.js"></script>

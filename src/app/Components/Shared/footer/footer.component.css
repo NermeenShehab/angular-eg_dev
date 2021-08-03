@@ -1,0 +1,23 @@
+/* Section8 Footer */
+.footer-container{
+    background-image: url(/assets/images/im14.jpg);
+    background-size: cover;
+}
+.section8 img{
+    width: 7rem;
+    height: auto;
+}
+.section8 input{
+    background-color: #E8F0F2;
+}
+.section8 h6{
+    color:#39A2DB;
+}
+.section8 button{
+    background-color: #39A2DB;
+    color :#053742
+}
+a{
+    text-decoration: none;
+}
+/* End of Section8 */

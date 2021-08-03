@@ -1,0 +1,71 @@
+<div class="cad " >
+    <div class="container">
+    <div class="row">
+    <div class=" col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+    <div class="breadcrumb__text">
+    <h2>Specalized {{selectcat.detialsCatagory.catname}}</h2>
+    <div class="breadcrumb__links">
+            <a routerLink="/home">Home &gt;</a>
+            <a routerLink="/Catagories">Features &gt;</a>
+            <a href="#">Services</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- portfolio -->
+<section class="section ">
+    <div class="container">
+          <div class="row justify-content-center ">
+               <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-center">
+                  <div class="section-title">
+                      <h2 class="colors"> {{selectcat.detialsCatagory.catname}}</h2>
+                      <div class="divider mx-auto my-4"></div>
+                      <p>We provide a wide range of creative services adipisicing elit. Autem maxime rem modi eaque, voluptate. Beatae officiis neque </p>
+                  </div>
+              </div>
+          </div>
+  </div>
+  </section> 
+
+   <!--filter-->
+    <div class="row justify-content-center mb-3">
+
+            <div class="form-group col-sm-8 col-lg-3 ">
+            <input type="text" [(ngModel)]="searchName" class="form-control" placeholder="Search By Name" />
+            </div>
+
+            <div class="form-group col-sm-8 col-lg-3">
+            <input type="text" [(ngModel)]="searchCity" class="form-control" placeholder="Search By City" />
+            </div>
+
+            <div class="form-group col-sm-8 col-lg-3 border border-1 rounded">
+                 
+                   <p-rating [(ngModel)]="searchRate" [readonly]="false" [stars]="5" [cancel]="false"> </p-rating> 
+                    
+        
+            </div>
+  </div>
+       <!-- cards-->
+       <!-- <div class=" col-8 col-sm-6 col-md-8 col-lg-8 m-3 g-4"> -->
+         
+            <!--row1--> 
+    <div class="container">
+   <div class="row justify-content-center ">
+        <div  div *ngFor="let item of worker  | city:searchCity  | name:searchName " class="card cd  col-md-4  col-lg-3 " style="width:16rem; height:18rem;" >
+           <img src={{item.workerimg}} class="card-img-top " alt="..."  >
+            <div class="card-body">
+                <div class="content ">
+                    <p><a href="doctor-single.html">{{item.workername}}</a></p>
+                    <p >{{item.workercity}}</p>
+                    <p-rating [(ngModel)]="item.workerate" [readonly]="true" [stars]="5" [cancel]="false"> </p-rating> 
+                </div>
+          </div>
+     </div>  
+    </div>     
+  </div>
+       
+ 
+  
+ 

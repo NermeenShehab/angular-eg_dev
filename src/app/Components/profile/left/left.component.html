@@ -1,0 +1,33 @@
+<div class="card mb-4"> <!-- style="width: 18rem;"-->
+  <div class="card-header text-left bg-white">
+    <fa-icon [icon]="faSignal" aria-hidden="true"></fa-icon> Statistics
+  </div>
+  <div class="card-body">
+      <div class="row text-center">
+          <div class="col-md-6 col-ms-12">evaluation</div>
+          <div class="col-md-6 col-ms-12">
+            <p-rating [(ngModel)]="val" [stars]="5" [cancel]="false"></p-rating>
+          </div>
+          <!-- <div class="col-md-4">number rating</div> -->
+      </div>
+      <hr>
+      <div class="row text-center">
+          <div class="col-md-6 col-ms-12">Project completion</div>
+          <div class="col-md-6 col-ms-12"><span style="background-color: gray; color: white;">not calculated</span></div>
+      </div>
+      <hr>
+      <!-- <div class="row">
+          <div class="col-md-6 col-ms-12">Re-employment</div>
+          <div class="col-md-6 col-ms-12"><span style="background-color: gray; color: white;">not calculated yet</span></div>
+      </div> -->
+      <div class="row text-center">
+          <div class="col-md-6 col-ms-12">On-time delivery</div>
+          <div class="col-md-6 col-ms-12"><span style="background-color: gray; color: white;">not calculated</span></div>
+      </div>
+      <hr>
+      <div class="row text-center">
+          <div class="col-md-6 col-ms-12">average response</div>
+          <div class="col-md-6 col-ms-12"><span style="background-color: gray; color: white;">not calculated</span></div>
+      </div>
+  </div>
+</div>

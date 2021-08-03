@@ -1,0 +1,83 @@
+<section class="Editing">
+  <div class="card">
+      <div class="card-body">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label>
+                  Type of account<em class="text-danger">*</em>
+              </label>
+              <section class="checkbox">
+                  <label>
+                      <input type="checkbox"/> The project owner
+                      <small class="text-muted">search for worker to implement my project</small>
+                  </label>
+                  <label>
+                      <input type="checkbox"/> The project hiring
+                      <small class="text-muted">search for work to implement my Experience</small>
+                      <!-- <label class="ps-4">
+                          <input type="checkbox"/> Avaliable to work
+                          <small class="text-muted">
+                              (removing this tag will temporarily hide your account from search results)
+                          </small>
+                      </label> -->
+                  </label>
+              </section>
+          </div>
+          <!-- specialist -->
+          <section class="row mt-3">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label>
+                          Specialization<em class="text-danger">*</em>
+                          <select class="form-select" aria-label="Default select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                          </select>
+                          <small class="text-muted">choose your field</small>
+                      </label>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label>
+                          Job title<em class="text-danger">*</em>
+                          <div class="input-group">
+                              <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <small class="text-muted">choose your field</small>
+                      </label>
+                  </div>
+              </div>
+          </section>
+          <!-- shortlist about me  -->
+          <section class="row mt-3">
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label>
+                          About-me<em class="text-danger">*</em>
+                      </label>
+                      <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- prtofolio -->
+          <section class="row mt-3">
+              <div class="form-group">
+                  <label class="control-label">Skills</label><br>
+                  <div class="row">
+                    <div class="col-md-3 bg-white ms-3" style="border-radius: 5px;">
+                      <p-chips [(ngModel)]="values"></p-chips>
+                    </div>
+                  </div>
+              </div>
+              <label class="control-label mt-2 mb-2">or Select skills from the list</label>
+          </section>
+              <div><button type="button" class="btn">Save</button></div>
+          </form>
+      </div>
+  </div>
+</section>

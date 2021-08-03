@@ -1,0 +1,32 @@
+/*  global styles to this file,
+and also import other style files */
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+/*primeng adds*/
+
+@import "../node_modules/primeicons/primeicons.css";
+@import "../node_modules/primeng/resources/themes/saga-blue/theme.css";
+@import "../node_modules/primeng/resources/primeng.min.css";
+
+/*material icons*/
+
+@import "//cdn.materialdesignicons.com/3.7.95/css/materialdesignicons.min.css";
+
+/*signup*/
+
+@import "./assets/css/signup/riliwan-rabo.css";
+@import "./assets/css/signup/style.css";
+@import "./assets/css/signup/form.css";
+@import "./assets/css/signup/loading-bars.css";
+@import url("//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+@import url("assets/css/login/util.css");
+@import url("assets/css/login/main.css");
+body {
+    background-color: #f9f9fa;
+    color: #6c7293;
+}
+
+.containersign {
+    margin-top: 150px;
+}

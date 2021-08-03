@@ -1,0 +1,11 @@
+.card{
+  background-color: #f2f1ef;
+  border-radius: 5px;
+}
+.btn{
+  color: white;
+  background-color: #0a58ca;
+  background-color: #0a53be;
+  border-radius: 5px;
+  padding:5px 10px;
+}
